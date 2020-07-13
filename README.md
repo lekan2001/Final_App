@@ -65,6 +65,7 @@ Original App Design Project - README Template
 
 ## Wireframes
 [Sketched wireframes]
+<img src="https://www.figma.com/file/sRRw23XRhcVh7QQouRnrxJ/Untitled?node-id=0%3A1" width=600>
 
 
 ### [BONUS] Digital Wireframes & Mockups
