@@ -39,8 +39,8 @@ Original App Design Project - README Template
 
 
 **Optional Nice-to-have Stories**
-*Integrate with chase bank
-
+*Integrate with chase bank to demo 
+*Use Yahoo finance to show detailed stock market
 
 
 
