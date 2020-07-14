@@ -18,6 +18,7 @@
 		E4F8EB8424B68BCB006BF595 /* Final_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB8324B68BCB006BF595 /* Final_AppTests.m */; };
 		E4F8EB8F24B68BCB006BF595 /* Final_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB8E24B68BCB006BF595 /* Final_AppUITests.m */; };
 		E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */; };
+		E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */; };
 		E868388ECA703968308685B4 /* Pods_Final_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		E4F8EB9024B68BCB006BF595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F8EBA924BD7DA2006BF595 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EDE424819692E18980331940 /* Pods-Final_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_App.release.xcconfig"; path = "Target Support Files/Pods-Final_App/Pods-Final_App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +184,8 @@
 			children = (
 				E4F8EBA924BD7DA2006BF595 /* LoginViewController.h */,
 				E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */,
+				E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */,
+				E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */,
 				E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */,
 				E4F8EB7A24B68BCB006BF595 /* main.m in Sources */,
+				E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */,
 				E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
