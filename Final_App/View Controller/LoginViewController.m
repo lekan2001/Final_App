@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "Parse/Parse.h"
 @interface LoginViewController ()
 
 @end
@@ -16,8 +16,101 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.passwordField.secureTextEntry = YES;
     // Do any additional setup after loading the view.
 }
+
+
+
+- (IBAction)signUp:(id)sender {
+    PFUser *newUser = [PFUser user];
+    newUser.username = self.usernameField.text;
+    newUser.password = self.passwordField.text;
+    
+    [newUser signUpInBackgroundWithBlock: ^(BOOL succeeded, NSError * error) {
+    
+    
+    
+    if (error != nil) {
+            NSLog(@"User log in failed: %@", error.localizedDescription);
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
+                   message:@"Unable to Register... Please Try again"
+            preferredStyle:(UIAlertControllerStyleAlert)];
+            // create an OK action
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                               style:UIAlertActionStyleDefault
+                                                             handler:^(UIAlertAction * _Nonnull action) {
+                                                                     // handle response here.
+                                                             }];
+            // add the OK action to the alert controller
+            [alert addAction:okAction];
+            [self presentViewController:alert animated:YES completion:^{
+                // optional code for what happens after the alert controller has finished presenting
+            }];
+            
+        } else {
+            NSLog(@"User sign up successfully");
+            
+            // display view controller that needs to shown after successful login
+        }
+    }];
+    
+    if ([self.usernameField.text isEqual:@""]){
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Username Required"
+               message:@"Please enter a username"
+        preferredStyle:(UIAlertControllerStyleAlert)];
+        
+        // create an OK action
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * _Nonnull action) {
+                                                                 // handle response here.
+           
+        }];
+        
+        [alert addAction:okAction];
+        [self presentViewController:alert animated:YES completion:^{
+            // optional code for what happens after the alert controller has finished presenting
+        }];
+    }
+    
+    if ([self.passwordField.text isEqual:@""]){
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password Required"
+               message:@"Please enter a username"
+        preferredStyle:(UIAlertControllerStyleAlert)];
+        
+        // create an OK action
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * _Nonnull action) {
+                                                                 // handle response here.
+           
+        }];
+        
+        [alert addAction:okAction];
+        [self presentViewController:alert animated:YES completion:^{
+            // optional code for what happens after the alert controller has finished presenting
+        }];
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+- (IBAction)login:(id)sender {
+    
+    
+    
+    
+}
+
+
+
+
 
 /*
 #pragma mark - Navigation
