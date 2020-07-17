@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		720DBEF60B6864522E9A025F /* Pods_Final_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */; };
 		82D1F9E9392BB7DF0EDCF5C9 /* Pods_Final_App_Final_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517081B0AF7636F5B30AA665 /* Pods_Final_App_Final_AppUITests.framework */; };
+		E4B2693924C160140016D0BD /* StockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693824C160140016D0BD /* StockCell.m */; };
 		E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB6824B68BCA006BF595 /* AppDelegate.m */; };
 		E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB6B24B68BCA006BF595 /* SceneDelegate.m */; };
 		E4F8EB7224B68BCA006BF595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F8EB7024B68BCA006BF595 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		E4F8EB8F24B68BCB006BF595 /* Final_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB8E24B68BCB006BF595 /* Final_AppUITests.m */; };
 		E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */; };
 		E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */; };
+		E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */; };
 		E868388ECA703968308685B4 /* Pods_Final_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2DF7723FEC711D7DFE41F8 /* Pods-Final_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Final_AppTests/Pods-Final_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B2693724C160140016D0BD /* StockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCell.h; sourceTree = "<group>"; };
+		E4B2693824C160140016D0BD /* StockCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockCell.m; sourceTree = "<group>"; };
 		E4F8EB6424B68BCA006BF595 /* Final_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F8EB6724B68BCA006BF595 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4F8EB6824B68BCA006BF595 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E4F8EBAF24BE5136006BF595 /* InvestHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestHomeViewController.h; sourceTree = "<group>"; };
+		E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestHomeViewController.m; sourceTree = "<group>"; };
 		EDE424819692E18980331940 /* Pods-Final_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_App.release.xcconfig"; path = "Target Support Files/Pods-Final_App/Pods-Final_App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +153,8 @@
 		E4F8EB6624B68BCA006BF595 /* Final_App */ = {
 			isa = PBXGroup;
 			children = (
+				E4F8EBB324BE5605006BF595 /* Models */,
+				E4F8EBB224BE55E0006BF595 /* Views */,
 				E4F8EBA824BD7D8B006BF595 /* View Controller */,
 				E4F8EB6724B68BCA006BF595 /* AppDelegate.h */,
 				E4F8EB6824B68BCA006BF595 /* AppDelegate.m */,
@@ -186,8 +194,26 @@
 				E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */,
 				E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */,
 				E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */,
+				E4F8EBAF24BE5136006BF595 /* InvestHomeViewController.h */,
+				E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E4F8EBB224BE55E0006BF595 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4B2693724C160140016D0BD /* StockCell.h */,
+				E4B2693824C160140016D0BD /* StockCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4F8EBB324BE5605006BF595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +458,9 @@
 				E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */,
 				E4F8EB7A24B68BCB006BF595 /* main.m in Sources */,
 				E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */,
+				E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */,
 				E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */,
+				E4B2693924C160140016D0BD /* StockCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
