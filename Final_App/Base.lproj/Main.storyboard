@@ -134,11 +134,100 @@
                                 <action selector="logout:" destination="cqJ-Q6-LUj" id="hro-MG-0dn"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="camera.circle" catalog="system" id="hBX-RZ-2vG">
+                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="CYN-ZE-tOK" kind="presentation" identifier="cameraSegue" id="Osq-9N-6Xg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsn-rq-nLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2217" y="814"/>
+        </scene>
+        <!--Recipt-->
+        <scene sceneID="HAI-h2-OO2">
+            <objects>
+                <viewController id="Ni9-wX-Kc4" customClass="ReceiptViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZLA-bA-65S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yto-DQ-eV2" customClass="PFImageView">
+                                <rect key="frame" x="0.0" y="56" width="414" height="475"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="477.5" id="TMx-IN-WbU"/>
+                                    <constraint firstAttribute="width" constant="414" id="rNw-Zw-n1i"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EIr-zD-a3f" appends="YES" id="gTO-NJ-Jeh"/>
+                                    <outletCollection property="gestureRecognizers" destination="pZF-dX-Tdu" appends="YES" id="rw2-o2-1R9"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Receipt Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-0E-ZYY" customClass="PFTextField">
+                                <rect key="frame" x="0.0" y="540" width="414" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ZS6-yD-YO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uF-ni-PZv">
+                                <rect key="frame" x="164" y="605" width="183" height="51"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxW-6s-im0">
+                                <rect key="frame" x="70" y="616" width="24" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Q7t-ag-K4S"/>
+                                    <constraint firstAttribute="height" constant="28" id="pNO-ik-isg"/>
+                                </constraints>
+                                <state key="normal" image="camera.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="snapReceipt:" destination="Ni9-wX-Kc4" eventType="touchUpInside" id="QSD-yn-RsQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ccx-0E-ZYY" firstAttribute="trailing" secondItem="cML-WI-erc" secondAttribute="trailing" id="3vb-4Z-pE7"/>
+                            <constraint firstItem="JxW-6s-im0" firstAttribute="leading" secondItem="cML-WI-erc" secondAttribute="leading" constant="70" id="8bc-S5-b8q"/>
+                            <constraint firstItem="9uF-ni-PZv" firstAttribute="leading" secondItem="JxW-6s-im0" secondAttribute="trailing" constant="70" id="Dyz-nW-jpI"/>
+                            <constraint firstItem="JxW-6s-im0" firstAttribute="top" secondItem="ccx-0E-ZYY" secondAttribute="bottom" constant="42" id="Idm-Ge-hm3"/>
+                            <constraint firstItem="cML-WI-erc" firstAttribute="bottom" secondItem="9uF-ni-PZv" secondAttribute="bottom" constant="152" id="L2M-pF-qkh"/>
+                            <constraint firstItem="9uF-ni-PZv" firstAttribute="top" secondItem="ccx-0E-ZYY" secondAttribute="bottom" constant="31" id="M84-4U-30j"/>
+                            <constraint firstItem="Yto-DQ-eV2" firstAttribute="top" secondItem="ZLA-bA-65S" secondAttribute="top" constant="55" id="MnF-pa-QVz"/>
+                            <constraint firstItem="ccx-0E-ZYY" firstAttribute="leading" secondItem="cML-WI-erc" secondAttribute="leading" id="NJH-kc-PRQ"/>
+                            <constraint firstItem="cML-WI-erc" firstAttribute="bottom" secondItem="JxW-6s-im0" secondAttribute="bottom" constant="164" id="SAH-gi-bcY"/>
+                            <constraint firstItem="ccx-0E-ZYY" firstAttribute="top" secondItem="Yto-DQ-eV2" secondAttribute="bottom" constant="7.5" id="YWw-11-xQf"/>
+                            <constraint firstItem="Yto-DQ-eV2" firstAttribute="leading" secondItem="cML-WI-erc" secondAttribute="leading" id="hRi-Ra-tcm"/>
+                            <constraint firstItem="cML-WI-erc" firstAttribute="trailing" secondItem="9uF-ni-PZv" secondAttribute="trailing" constant="67" id="oUb-D6-fpN"/>
+                            <constraint firstItem="Yto-DQ-eV2" firstAttribute="trailing" secondItem="cML-WI-erc" secondAttribute="trailing" id="pYn-hk-GNq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cML-WI-erc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipt" id="MAe-Bv-zmJ"/>
+                    <connections>
+                        <outlet property="cameraOption" destination="JxW-6s-im0" id="GAP-14-dE6"/>
+                        <outlet property="receiptImageView" destination="Yto-DQ-eV2" id="G65-Qy-IDk"/>
+                        <outlet property="saveReceipt" destination="9uF-ni-PZv" id="blY-FS-pQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZO-Bv-h2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EIr-zD-a3f"/>
+                <tapGestureRecognizer id="pZF-dX-Tdu"/>
+            </objects>
+            <point key="canvasLocation" x="-2217.3913043478265" y="2287.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="ki6-Dh-UPE">
@@ -330,5 +419,34 @@
             </objects>
             <point key="canvasLocation" x="-1149" y="117"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qYe-8D-M97">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CYN-ZE-tOK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ghr-XD-WK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ni9-wX-Kc4" kind="relationship" relationship="rootViewController" id="OGb-uS-UB9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQp-Bu-u8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2217" y="1535"/>
+        </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="camera.circle" catalog="system" width="128" height="121"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="doc.text.viewfinder" catalog="system" width="128" height="114"/>
+    </resources>
 </document>
