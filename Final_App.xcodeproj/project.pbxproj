@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		720DBEF60B6864522E9A025F /* Pods_Final_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */; };
 		82D1F9E9392BB7DF0EDCF5C9 /* Pods_Final_App_Final_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517081B0AF7636F5B30AA665 /* Pods_Final_App_Final_AppUITests.framework */; };
+		E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699EAF24C7FA560099840B /* InvestDetailViewController.m */; };
 		E4B2693924C160140016D0BD /* StockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693824C160140016D0BD /* StockCell.m */; };
 		E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */; };
 		E4B2693F24C178D10016D0BD /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693E24C178D10016D0BD /* Receipt.m */; };
@@ -52,6 +53,8 @@
 		61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2DF7723FEC711D7DFE41F8 /* Pods-Final_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Final_AppTests/Pods-Final_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4699EAE24C7FA560099840B /* InvestDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestDetailViewController.h; sourceTree = "<group>"; };
+		E4699EAF24C7FA560099840B /* InvestDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestDetailViewController.m; sourceTree = "<group>"; };
 		E4B2693724C160140016D0BD /* StockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCell.h; sourceTree = "<group>"; };
 		E4B2693824C160140016D0BD /* StockCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockCell.m; sourceTree = "<group>"; };
 		E4B2693A24C1781C0016D0BD /* ReceiptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */,
 				E4B2693A24C1781C0016D0BD /* ReceiptViewController.h */,
 				E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */,
+				E4699EAE24C7FA560099840B /* InvestDetailViewController.h */,
+				E4699EAF24C7FA560099840B /* InvestDetailViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */,
 				E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */,
 				E4B2693924C160140016D0BD /* StockCell.m in Sources */,
+				E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */,
 				E4B2693F24C178D10016D0BD /* Receipt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
