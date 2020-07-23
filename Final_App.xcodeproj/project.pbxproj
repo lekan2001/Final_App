@@ -10,6 +10,16 @@
 		720DBEF60B6864522E9A025F /* Pods_Final_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */; };
 		82D1F9E9392BB7DF0EDCF5C9 /* Pods_Final_App_Final_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517081B0AF7636F5B30AA665 /* Pods_Final_App_Final_AppUITests.framework */; };
 		E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699EAF24C7FA560099840B /* InvestDetailViewController.m */; };
+		E4699F0224C8EE030099840B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F0124C8EE030099840B /* ViewController.m */; };
+		E4699F0524C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F0424C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.m */; };
+		E4699F0824C902B90099840B /* ViewController+CustomConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F0724C902B90099840B /* ViewController+CustomConfiguration.m */; };
+		E4699F0B24C9042B0099840B /* ViewController+SharedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F0A24C9042B0099840B /* ViewController+SharedConfiguration.m */; };
+		E4699F0E24C904FB0099840B /* ViewController+UpdateMode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F0D24C904FB0099840B /* ViewController+UpdateMode.m */; };
+		E4699F1124C906DD0099840B /* ViewController+ItemAddToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F1024C906DD0099840B /* ViewController+ItemAddToken.m */; };
+		E4699F1424C907660099840B /* ViewController+OAuthSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F1324C907660099840B /* ViewController+OAuthSupport.m */; };
+		E4699F1724C907D30099840B /* ViewController+PaymentInitiation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F1624C907D30099840B /* ViewController+PaymentInitiation.m */; };
+		E4699F1A24C94E580099840B /* AppDelegate+OAuthSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F1924C94E580099840B /* AppDelegate+OAuthSupport.m */; };
+		E4699F1D24C94ECD0099840B /* AppDelegate+Preflight.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699F1C24C94ECD0099840B /* AppDelegate+Preflight.m */; };
 		E4B2693924C160140016D0BD /* StockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693824C160140016D0BD /* StockCell.m */; };
 		E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */; };
 		E4B2693F24C178D10016D0BD /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693E24C178D10016D0BD /* Receipt.m */; };
@@ -55,6 +65,26 @@
 		C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4699EAE24C7FA560099840B /* InvestDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestDetailViewController.h; sourceTree = "<group>"; };
 		E4699EAF24C7FA560099840B /* InvestDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestDetailViewController.m; sourceTree = "<group>"; };
+		E4699F0024C8EE030099840B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4699F0124C8EE030099840B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4699F0324C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+PLKPlaidLinkViewDelegate.h"; sourceTree = "<group>"; };
+		E4699F0424C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+PLKPlaidLinkViewDelegate.m"; sourceTree = "<group>"; };
+		E4699F0624C902B90099840B /* ViewController+CustomConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+CustomConfiguration.h"; sourceTree = "<group>"; };
+		E4699F0724C902B90099840B /* ViewController+CustomConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+CustomConfiguration.m"; sourceTree = "<group>"; };
+		E4699F0924C9042B0099840B /* ViewController+SharedConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+SharedConfiguration.h"; sourceTree = "<group>"; };
+		E4699F0A24C9042B0099840B /* ViewController+SharedConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+SharedConfiguration.m"; sourceTree = "<group>"; };
+		E4699F0C24C904FB0099840B /* ViewController+UpdateMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+UpdateMode.h"; sourceTree = "<group>"; };
+		E4699F0D24C904FB0099840B /* ViewController+UpdateMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+UpdateMode.m"; sourceTree = "<group>"; };
+		E4699F0F24C906DD0099840B /* ViewController+ItemAddToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+ItemAddToken.h"; sourceTree = "<group>"; };
+		E4699F1024C906DD0099840B /* ViewController+ItemAddToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+ItemAddToken.m"; sourceTree = "<group>"; };
+		E4699F1224C907660099840B /* ViewController+OAuthSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+OAuthSupport.h"; sourceTree = "<group>"; };
+		E4699F1324C907660099840B /* ViewController+OAuthSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+OAuthSupport.m"; sourceTree = "<group>"; };
+		E4699F1524C907D30099840B /* ViewController+PaymentInitiation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+PaymentInitiation.h"; sourceTree = "<group>"; };
+		E4699F1624C907D30099840B /* ViewController+PaymentInitiation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+PaymentInitiation.m"; sourceTree = "<group>"; };
+		E4699F1824C94E580099840B /* AppDelegate+OAuthSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+OAuthSupport.h"; sourceTree = "<group>"; };
+		E4699F1924C94E580099840B /* AppDelegate+OAuthSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+OAuthSupport.m"; sourceTree = "<group>"; };
+		E4699F1B24C94ECD0099840B /* AppDelegate+Preflight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Preflight.h"; sourceTree = "<group>"; };
+		E4699F1C24C94ECD0099840B /* AppDelegate+Preflight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Preflight.m"; sourceTree = "<group>"; };
 		E4B2693724C160140016D0BD /* StockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCell.h; sourceTree = "<group>"; };
 		E4B2693824C160140016D0BD /* StockCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockCell.m; sourceTree = "<group>"; };
 		E4B2693A24C1781C0016D0BD /* ReceiptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
@@ -174,6 +204,10 @@
 				E4F8EB7524B68BCB006BF595 /* LaunchScreen.storyboard */,
 				E4F8EB7824B68BCB006BF595 /* Info.plist */,
 				E4F8EB7924B68BCB006BF595 /* main.m */,
+				E4699F1824C94E580099840B /* AppDelegate+OAuthSupport.h */,
+				E4699F1924C94E580099840B /* AppDelegate+OAuthSupport.m */,
+				E4699F1B24C94ECD0099840B /* AppDelegate+Preflight.h */,
+				E4699F1C24C94ECD0099840B /* AppDelegate+Preflight.m */,
 			);
 			path = Final_App;
 			sourceTree = "<group>";
@@ -209,6 +243,22 @@
 				E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */,
 				E4699EAE24C7FA560099840B /* InvestDetailViewController.h */,
 				E4699EAF24C7FA560099840B /* InvestDetailViewController.m */,
+				E4699F0024C8EE030099840B /* ViewController.h */,
+				E4699F0124C8EE030099840B /* ViewController.m */,
+				E4699F0324C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.h */,
+				E4699F0424C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.m */,
+				E4699F0624C902B90099840B /* ViewController+CustomConfiguration.h */,
+				E4699F0724C902B90099840B /* ViewController+CustomConfiguration.m */,
+				E4699F0924C9042B0099840B /* ViewController+SharedConfiguration.h */,
+				E4699F0A24C9042B0099840B /* ViewController+SharedConfiguration.m */,
+				E4699F0C24C904FB0099840B /* ViewController+UpdateMode.h */,
+				E4699F0D24C904FB0099840B /* ViewController+UpdateMode.m */,
+				E4699F0F24C906DD0099840B /* ViewController+ItemAddToken.h */,
+				E4699F1024C906DD0099840B /* ViewController+ItemAddToken.m */,
+				E4699F1224C907660099840B /* ViewController+OAuthSupport.h */,
+				E4699F1324C907660099840B /* ViewController+OAuthSupport.m */,
+				E4699F1524C907D30099840B /* ViewController+PaymentInitiation.h */,
+				E4699F1624C907D30099840B /* ViewController+PaymentInitiation.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -243,6 +293,7 @@
 				E4F8EB6124B68BCA006BF595 /* Frameworks */,
 				E4F8EB6224B68BCA006BF595 /* Resources */,
 				98D3332D5A5DFDFB264880DF /* [CP] Embed Pods Frameworks */,
+				E4699EB724C8DDAA0099840B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -445,6 +496,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4699EB724C8DDAA0099840B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nLINK_ROOT=${PODS_ROOT:+$PODS_ROOT/Plaid/ios}\ncp \"${LINK_ROOT:-$PROJECT_DIR/..}\"/LinkKit.framework/prepare_for_distribution.sh \"${CODESIGNING_FOLDER_PATH}\"/Frameworks/LinkKit.framework/prepare_for_distribution.sh\n\"${CODESIGNING_FOLDER_PATH}\"/Frameworks/LinkKit.framework/prepare_for_distribution.sh\n\n\n\n";
+		};
 		FA75E37F23A98FC7F1B0881F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,16 +537,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4699F1A24C94E580099840B /* AppDelegate+OAuthSupport.m in Sources */,
 				E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */,
 				E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */,
 				E4F8EB7A24B68BCB006BF595 /* main.m in Sources */,
+				E4699F1724C907D30099840B /* ViewController+PaymentInitiation.m in Sources */,
 				E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */,
+				E4699F0E24C904FB0099840B /* ViewController+UpdateMode.m in Sources */,
+				E4699F0824C902B90099840B /* ViewController+CustomConfiguration.m in Sources */,
 				E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */,
+				E4699F0B24C9042B0099840B /* ViewController+SharedConfiguration.m in Sources */,
+				E4699F1424C907660099840B /* ViewController+OAuthSupport.m in Sources */,
+				E4699F0224C8EE030099840B /* ViewController.m in Sources */,
 				E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */,
 				E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */,
+				E4699F1124C906DD0099840B /* ViewController+ItemAddToken.m in Sources */,
 				E4B2693924C160140016D0BD /* StockCell.m in Sources */,
 				E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */,
 				E4B2693F24C178D10016D0BD /* Receipt.m in Sources */,
+				E4699F1D24C94ECD0099840B /* AppDelegate+Preflight.m in Sources */,
+				E4699F0524C9002E0099840B /* ViewController+PLKPlaidLinkViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +733,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LINK_ENV = "";
+				"LINK_ENV[arch=*]" = Sandbox;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adisaolalekan.Final-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,6 +753,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LINK_ENV = "";
+				"LINK_ENV[arch=*]" = Production;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adisaolalekan.Final-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

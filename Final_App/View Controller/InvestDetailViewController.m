@@ -40,7 +40,8 @@
        // [self fetchStock];
         
         
-    self.stockFullName.text = self.result[@"longName"];
+   // self.stockFullName.text = self.result[@"longName"];
+    //self.stockSymbol.text = self.result[@"symbol"];
     NSLog(@"%@", self.result[@"longName"]);
     
     
