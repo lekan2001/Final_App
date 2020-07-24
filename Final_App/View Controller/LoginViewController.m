@@ -15,6 +15,7 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+    NSLog(@"I am visible");
     [super viewDidLoad];
     self.passwordField.secureTextEntry = YES;
     // Do any additional setup after loading the view.
