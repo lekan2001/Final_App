@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		720DBEF60B6864522E9A025F /* Pods_Final_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */; };
 		82D1F9E9392BB7DF0EDCF5C9 /* Pods_Final_App_Final_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517081B0AF7636F5B30AA665 /* Pods_Final_App_Final_AppUITests.framework */; };
+		E423CC3324CA9D1B004FCC66 /* PlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3224CA9D1B004FCC66 /* PlViewController.m */; };
+		E423CC3624CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3524CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m */; };
+		E423CC3924CAA2EC004FCC66 /* ViewController+CustomCofiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3824CAA2EC004FCC66 /* ViewController+CustomCofiguration.m */; };
+		E423CC3C24CAA97A004FCC66 /* ViewController+OAuthSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3B24CAA97A004FCC66 /* ViewController+OAuthSupport.m */; };
+		E423CC3F24CB3475004FCC66 /* ViewController+SharedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */; };
+		E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */; };
 		E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699EAF24C7FA560099840B /* InvestDetailViewController.m */; };
 		E4B2693924C160140016D0BD /* StockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693824C160140016D0BD /* StockCell.m */; };
 		E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */; };
@@ -53,6 +59,18 @@
 		61BABC7456AE74A44461F7D7 /* Pods_Final_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2DF7723FEC711D7DFE41F8 /* Pods-Final_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Final_AppTests/Pods-Final_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E423CC3124CA9D1B004FCC66 /* PlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlViewController.h; sourceTree = "<group>"; };
+		E423CC3224CA9D1B004FCC66 /* PlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlViewController.m; sourceTree = "<group>"; };
+		E423CC3424CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+PLKPlaidLinkViewDelegate.h"; sourceTree = "<group>"; };
+		E423CC3524CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+PLKPlaidLinkViewDelegate.m"; sourceTree = "<group>"; };
+		E423CC3724CAA2EC004FCC66 /* ViewController+CustomCofiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+CustomCofiguration.h"; sourceTree = "<group>"; };
+		E423CC3824CAA2EC004FCC66 /* ViewController+CustomCofiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+CustomCofiguration.m"; sourceTree = "<group>"; };
+		E423CC3A24CAA97A004FCC66 /* ViewController+OAuthSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+OAuthSupport.h"; sourceTree = "<group>"; };
+		E423CC3B24CAA97A004FCC66 /* ViewController+OAuthSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+OAuthSupport.m"; sourceTree = "<group>"; };
+		E423CC3D24CB3475004FCC66 /* ViewController+SharedConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+SharedConfiguration.h"; sourceTree = "<group>"; };
+		E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+SharedConfiguration.m"; sourceTree = "<group>"; };
+		E423CC4024CB35E9004FCC66 /* ViewController+LinkToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+LinkToken.h"; sourceTree = "<group>"; };
+		E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+LinkToken.m"; sourceTree = "<group>"; };
 		E4699EAE24C7FA560099840B /* InvestDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestDetailViewController.h; sourceTree = "<group>"; };
 		E4699EAF24C7FA560099840B /* InvestDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestDetailViewController.m; sourceTree = "<group>"; };
 		E4B2693724C160140016D0BD /* StockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCell.h; sourceTree = "<group>"; };
@@ -209,6 +227,18 @@
 				E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */,
 				E4699EAE24C7FA560099840B /* InvestDetailViewController.h */,
 				E4699EAF24C7FA560099840B /* InvestDetailViewController.m */,
+				E423CC3124CA9D1B004FCC66 /* PlViewController.h */,
+				E423CC3224CA9D1B004FCC66 /* PlViewController.m */,
+				E423CC3424CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.h */,
+				E423CC3524CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m */,
+				E423CC3724CAA2EC004FCC66 /* ViewController+CustomCofiguration.h */,
+				E423CC3824CAA2EC004FCC66 /* ViewController+CustomCofiguration.m */,
+				E423CC3A24CAA97A004FCC66 /* ViewController+OAuthSupport.h */,
+				E423CC3B24CAA97A004FCC66 /* ViewController+OAuthSupport.m */,
+				E423CC3D24CB3475004FCC66 /* ViewController+SharedConfiguration.h */,
+				E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */,
+				E423CC4024CB35E9004FCC66 /* ViewController+LinkToken.h */,
+				E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -489,14 +519,20 @@
 			files = (
 				E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */,
 				E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */,
+				E423CC3F24CB3475004FCC66 /* ViewController+SharedConfiguration.m in Sources */,
 				E4F8EB7A24B68BCB006BF595 /* main.m in Sources */,
 				E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */,
 				E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */,
 				E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */,
+				E423CC3324CA9D1B004FCC66 /* PlViewController.m in Sources */,
 				E4F8EB6C24B68BCA006BF595 /* SceneDelegate.m in Sources */,
+				E423CC3C24CAA97A004FCC66 /* ViewController+OAuthSupport.m in Sources */,
 				E4B2693924C160140016D0BD /* StockCell.m in Sources */,
+				E423CC3924CAA2EC004FCC66 /* ViewController+CustomCofiguration.m in Sources */,
 				E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */,
 				E4B2693F24C178D10016D0BD /* Receipt.m in Sources */,
+				E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */,
+				E423CC3624CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

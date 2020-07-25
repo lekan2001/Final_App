@@ -9,6 +9,7 @@ target 'Final_App' do
     pod 'Parse'
     pod 'Parse/UI'
     pod 'Plaid'
+    pod 'AFNetworking'
   target 'Final_AppTests' do
     inherit! :search_paths
     # Pods for testing

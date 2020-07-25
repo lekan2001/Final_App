@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Parse/Parse.h"
-
+#import "AFNetworking.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +18,36 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+
+    NSString *url = @"https://development.plaid.com/link/token/create";
+    NSDictionary *params = @{
+        @"client_id" : @"5f18a1d2b89a9900124d8b90",
+        @"secret" : @"c1fcbbe2724b06f8e88670fb00c497",
+        @"client_name" : @"Tim's Demo",
+        @"language" : @"en",
+        @"country_codes" : @[@"US"],
+        @"user" : @{ @"client_user_id" : @"123" },
+        @"products" : @[@"transactions"]
+    };
+    NSDictionary *headers = @{
+        @"Content-Type" : @"application/json",
+    };
+
+    [manager POST:url parameters:params headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", error.description);
+    }];
+    
+    
+    
+    
+    
+    
     // Override point for customization after application launch.
     ParseClientConfiguration *config = [ParseClientConfiguration   configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         
@@ -29,24 +59,7 @@
     
 
     
-//    PFObject *gameScore = [PFObject objectWithClassName:@"GameScore"];
-//    gameScore[@"score"] = @1337;
-//    gameScore[@"playerName"] = @"Sean Plott";
-//    gameScore[@"cheatMode"] = @NO;
-//    [gameScore saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//      if (succeeded) {
-//         NSLog(@"Object saved!");
-//      } else {
-//         NSLog(@"Error: %@", error.description);
-//      }
-//    }];
 
-    
-//    if (PFUser.currentUser) {
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        
-//        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoggedInVC"];
-//    }
     return YES;
 }
 

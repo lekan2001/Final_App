@@ -73,7 +73,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8a0-LE-r0T"/>
-                                    <segue destination="gAw-fd-5wX" kind="show" identifier="firstSegue" id="ehq-gB-BfC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-3O-TkQ">
@@ -113,16 +112,17 @@
                     <connections>
                         <outlet property="passwordField" destination="3ou-hk-A1w" id="KA8-fd-ane"/>
                         <outlet property="usernameField" destination="2Et-WO-3kp" id="fwM-GS-yDN"/>
+                        <segue destination="gAw-fd-5wX" kind="show" identifier="firstSegue" id="PqS-En-raN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3187" y="-646"/>
         </scene>
-        <!--View Controller-->
+        <!--Pl View Controller-->
         <scene sceneID="99S-9c-Ghk">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zcb-aa-iL9" customClass="ViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="zcb-aa-iL9" customClass="PlViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7GN-Vo-LGR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OPEN PLAID LINK"/>
                                 <connections>
-                                    <action selector="didTapPlaidBtn:" destination="zcb-aa-iL9" eventType="touchUpInside" id="dNj-sl-hVC"/>
+                                    <action selector="didTapPlaidBtn:" destination="zcb-aa-iL9" eventType="touchUpInside" id="CDf-vb-DBs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -162,8 +162,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="SC7-Ta-xzU"/>
                     <connections>
-                        <outlet property="plaidButton" destination="zjK-6E-MdN" id="ocw-je-6c1"/>
-                        <outlet property="plaidLabel" destination="qn2-cC-kMj" id="2uU-12-qpB"/>
+                        <outlet property="PlaidButton" destination="zjK-6E-MdN" id="q15-8H-TwR"/>
+                        <outlet property="PlaidInfo" destination="qn2-cC-kMj" id="yRa-OY-OFL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ko4-ex-Mqv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
