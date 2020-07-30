@@ -15,6 +15,9 @@
 		E423CC3C24CAA97A004FCC66 /* ViewController+OAuthSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3B24CAA97A004FCC66 /* ViewController+OAuthSupport.m */; };
 		E423CC3F24CB3475004FCC66 /* ViewController+SharedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */; };
 		E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */; };
+		E451B92024D0DD63003F3D70 /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B91F24D0DD63003F3D70 /* AccountInfo.m */; };
+		E451B92324D15422003F3D70 /* AccountDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B92224D15422003F3D70 /* AccountDataCell.m */; };
+		E451B96724D227ED003F3D70 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B96624D227ED003F3D70 /* HomeViewController.m */; };
 		E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4699EAF24C7FA560099840B /* InvestDetailViewController.m */; };
 		E4B2693924C160140016D0BD /* StockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693824C160140016D0BD /* StockCell.m */; };
 		E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B2693B24C1781C0016D0BD /* ReceiptViewController.m */; };
@@ -28,7 +31,6 @@
 		E4F8EB8424B68BCB006BF595 /* Final_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB8324B68BCB006BF595 /* Final_AppTests.m */; };
 		E4F8EB8F24B68BCB006BF595 /* Final_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB8E24B68BCB006BF595 /* Final_AppUITests.m */; };
 		E4F8EBAB24BD7DA2006BF595 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */; };
-		E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */; };
 		E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */; };
 		E868388ECA703968308685B4 /* Pods_Final_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A7FDA3E4A9F2E8694FACC1 /* Pods_Final_App.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,12 @@
 		E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+SharedConfiguration.m"; sourceTree = "<group>"; };
 		E423CC4024CB35E9004FCC66 /* ViewController+LinkToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+LinkToken.h"; sourceTree = "<group>"; };
 		E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+LinkToken.m"; sourceTree = "<group>"; };
+		E451B91E24D0DC8C003F3D70 /* AccountInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		E451B91F24D0DD63003F3D70 /* AccountInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		E451B92124D15422003F3D70 /* AccountDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountDataCell.h; sourceTree = "<group>"; };
+		E451B92224D15422003F3D70 /* AccountDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountDataCell.m; sourceTree = "<group>"; };
+		E451B96524D227ED003F3D70 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E451B96624D227ED003F3D70 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E4699EAE24C7FA560099840B /* InvestDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestDetailViewController.h; sourceTree = "<group>"; };
 		E4699EAF24C7FA560099840B /* InvestDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestDetailViewController.m; sourceTree = "<group>"; };
 		E4B2693724C160140016D0BD /* StockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCell.h; sourceTree = "<group>"; };
@@ -97,8 +105,6 @@
 		E4F8EB9024B68BCB006BF595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F8EBA924BD7DA2006BF595 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E4F8EBAF24BE5136006BF595 /* InvestHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestHomeViewController.h; sourceTree = "<group>"; };
 		E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestHomeViewController.m; sourceTree = "<group>"; };
 		EDE424819692E18980331940 /* Pods-Final_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_App.release.xcconfig"; path = "Target Support Files/Pods-Final_App/Pods-Final_App.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,8 +225,8 @@
 			children = (
 				E4F8EBA924BD7DA2006BF595 /* LoginViewController.h */,
 				E4F8EBAA24BD7DA2006BF595 /* LoginViewController.m */,
-				E4F8EBAC24BD86B0006BF595 /* HomeViewController.h */,
-				E4F8EBAD24BD86B0006BF595 /* HomeViewController.m */,
+				E451B96524D227ED003F3D70 /* HomeViewController.h */,
+				E451B96624D227ED003F3D70 /* HomeViewController.m */,
 				E4F8EBAF24BE5136006BF595 /* InvestHomeViewController.h */,
 				E4F8EBB024BE5136006BF595 /* InvestHomeViewController.m */,
 				E4B2693A24C1781C0016D0BD /* ReceiptViewController.h */,
@@ -248,6 +254,8 @@
 			children = (
 				E4B2693724C160140016D0BD /* StockCell.h */,
 				E4B2693824C160140016D0BD /* StockCell.m */,
+				E451B92124D15422003F3D70 /* AccountDataCell.h */,
+				E451B92224D15422003F3D70 /* AccountDataCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 			children = (
 				E4B2693D24C178D10016D0BD /* Receipt.h */,
 				E4B2693E24C178D10016D0BD /* Receipt.m */,
+				E451B91E24D0DC8C003F3D70 /* AccountInfo.h */,
+				E451B91F24D0DD63003F3D70 /* AccountInfo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -521,7 +531,8 @@
 				E4F8EB6924B68BCA006BF595 /* AppDelegate.m in Sources */,
 				E423CC3F24CB3475004FCC66 /* ViewController+SharedConfiguration.m in Sources */,
 				E4F8EB7A24B68BCB006BF595 /* main.m in Sources */,
-				E4F8EBAE24BD86B0006BF595 /* HomeViewController.m in Sources */,
+				E451B92024D0DD63003F3D70 /* AccountInfo.m in Sources */,
+				E451B96724D227ED003F3D70 /* HomeViewController.m in Sources */,
 				E4F8EBB124BE5136006BF595 /* InvestHomeViewController.m in Sources */,
 				E4B2693C24C1781C0016D0BD /* ReceiptViewController.m in Sources */,
 				E423CC3324CA9D1B004FCC66 /* PlViewController.m in Sources */,
@@ -529,6 +540,7 @@
 				E423CC3C24CAA97A004FCC66 /* ViewController+OAuthSupport.m in Sources */,
 				E4B2693924C160140016D0BD /* StockCell.m in Sources */,
 				E423CC3924CAA2EC004FCC66 /* ViewController+CustomCofiguration.m in Sources */,
+				E451B92324D15422003F3D70 /* AccountDataCell.m in Sources */,
 				E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */,
 				E4B2693F24C178D10016D0BD /* Receipt.m in Sources */,
 				E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */,

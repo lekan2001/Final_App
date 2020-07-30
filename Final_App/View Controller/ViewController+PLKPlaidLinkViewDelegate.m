@@ -137,7 +137,7 @@
       @"Content-Type": @"application/json"
     };
     [request setAllHTTPHeaderFields:headers];
-    NSData *postData = [[NSData alloc] initWithData:[@"{\n    \"client_id\": \"5f18a1d2b89a9900124d8b90\",\n    \"secret\": \"bd12e8976f94de46e0bc5c46be2e27\",\n    \"public_token\": \"public-sandbox-cb778ce5-fa70-4294-90b6-d2c37d49e2ec\"\n}" dataUsingEncoding:NSUTF8StringEncoding]];
+    NSData *postData = [[NSData alloc] initWithData:[@"{\n    \"client_id\": \"5f18a1d2b89a9900124d8b90\",\n    \"secret\": \"bd12e8976f94de46e0bc5c46be2e27\",\n    \"public_token\": \"public-sandbox-b743f431-2887-4863-b69b-c52c32cadc06\"\n}" dataUsingEncoding:NSUTF8StringEncoding]];
     [request setHTTPBody:postData];
     [request setHTTPMethod:@"POST"];
     NSURLSession *session = [NSURLSession sharedSession];

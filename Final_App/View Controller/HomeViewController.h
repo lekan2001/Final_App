@@ -2,7 +2,7 @@
 //  HomeViewController.h
 //  Final_App
 //
-//  Created by Olalekan Abdurazaq Adisa on 7/14/20.
+//  Created by Olalekan Abdurazaq Adisa on 7/29/20.
 //  Copyright © 2020 Facebook University. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UITableViewController
 
 @end
 

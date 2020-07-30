@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Bolts/Tasks (1.9.1)
+  - FoldingCell (5.0.2)
   - Parse (1.18.0):
     - Parse/Core (= 1.18.0)
   - Parse/Core (1.18.0):
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - FoldingCell
   - Parse
   - Parse/UI
   - Plaid
@@ -33,15 +35,17 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Bolts
+    - FoldingCell
     - Parse
     - Plaid
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  FoldingCell: f92eb5fb9842319e7cd08c71533c98408b785099
   Parse: 79bdda34fdb7eb2a707a43a951c8aae236cb3e34
   Plaid: 083db655629015d74f71347d50322c9d936cdd2a
 
-PODFILE CHECKSUM: 7ca2d6a25820c8030be79ad6d0bc766123289c39
+PODFILE CHECKSUM: 7ec9968871ad9fba38670aa0c1df3745c28fab75
 
 COCOAPODS: 1.9.3
