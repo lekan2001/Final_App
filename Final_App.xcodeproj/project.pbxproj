@@ -15,6 +15,7 @@
 		E423CC3C24CAA97A004FCC66 /* ViewController+OAuthSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3B24CAA97A004FCC66 /* ViewController+OAuthSupport.m */; };
 		E423CC3F24CB3475004FCC66 /* ViewController+SharedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */; };
 		E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */; };
+		E42492BC24D8840400F88B5C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42492BB24D8840400F88B5C /* ChartViewController.m */; };
 		E451B92024D0DD63003F3D70 /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B91F24D0DD63003F3D70 /* AccountInfo.m */; };
 		E451B92324D15422003F3D70 /* AccountDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B92224D15422003F3D70 /* AccountDataCell.m */; };
 		E451B96724D227ED003F3D70 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E451B96624D227ED003F3D70 /* HomeViewController.m */; };
@@ -73,6 +74,8 @@
 		E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+SharedConfiguration.m"; sourceTree = "<group>"; };
 		E423CC4024CB35E9004FCC66 /* ViewController+LinkToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+LinkToken.h"; sourceTree = "<group>"; };
 		E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+LinkToken.m"; sourceTree = "<group>"; };
+		E42492BA24D8840400F88B5C /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		E42492BB24D8840400F88B5C /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		E451B91E24D0DC8C003F3D70 /* AccountInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
 		E451B91F24D0DD63003F3D70 /* AccountInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
 		E451B92124D15422003F3D70 /* AccountDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountDataCell.h; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 				E423CC3E24CB3475004FCC66 /* ViewController+SharedConfiguration.m */,
 				E423CC4024CB35E9004FCC66 /* ViewController+LinkToken.h */,
 				E423CC4124CB35E9004FCC66 /* ViewController+LinkToken.m */,
+				E42492BA24D8840400F88B5C /* ChartViewController.h */,
+				E42492BB24D8840400F88B5C /* ChartViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -542,6 +547,7 @@
 				E423CC3924CAA2EC004FCC66 /* ViewController+CustomCofiguration.m in Sources */,
 				E451B92324D15422003F3D70 /* AccountDataCell.m in Sources */,
 				E4699EB024C7FA560099840B /* InvestDetailViewController.m in Sources */,
+				E42492BC24D8840400F88B5C /* ChartViewController.m in Sources */,
 				E4B2693F24C178D10016D0BD /* Receipt.m in Sources */,
 				E423CC4224CB35E9004FCC66 /* ViewController+LinkToken.m in Sources */,
 				E423CC3624CAA09C004FCC66 /* ViewController+PLKPlaidLinkViewDelegate.m in Sources */,

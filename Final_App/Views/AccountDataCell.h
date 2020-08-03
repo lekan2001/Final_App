@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UILabel *availableBalance;
 
+@property (weak, nonatomic) IBOutlet UIButton *chartTestBtn;
+
+
 //@property (strong, nonatomic) IBOutlet foregroundView *Folding1;
 
 

@@ -85,6 +85,11 @@
                                     <segue destination="zcb-aa-iL9" kind="presentation" modalPresentationStyle="automatic" id="nMT-n0-j35"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="li8-Mt-M7e">
+                                <rect key="frame" x="192" y="415" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -110,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loginActivityIndicator" destination="li8-Mt-M7e" id="mXr-kf-j2r"/>
                         <outlet property="passwordField" destination="3ou-hk-A1w" id="KA8-fd-ane"/>
                         <outlet property="usernameField" destination="2Et-WO-3kp" id="fwM-GS-yDN"/>
                         <segue destination="gAw-fd-5wX" kind="show" identifier="firstSegue" id="PqS-En-raN"/>
@@ -180,6 +186,22 @@
             </objects>
             <point key="canvasLocation" x="-2306" y="-1274"/>
         </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="O95-mA-rzt">
+            <objects>
+                <viewController storyboardIdentifier="chartVC" id="EU2-H7-5wW" customClass="ChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qdq-fC-EcW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="F3Q-Tn-U0P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1av-Gl-nF1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNV-9g-dNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2351" y="835"/>
+        </scene>
         <!--Finance-->
         <scene sceneID="TEC-X8-GFW">
             <objects>
@@ -187,7 +209,11 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Bp-C1-URI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountCell" rowHeight="190" id="NeE-vQ-F79" customClass="AccountDataCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="190"/>
@@ -214,45 +240,82 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-qo-SCx">
-                                            <rect key="frame" x="46" y="144" width="36" height="23"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-qo-SCx">
+                                            <rect key="frame" x="85.5" y="144" width="36" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="23" id="cnR-bd-ERt"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="sH1-lb-mve"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                             <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="124" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YG-q3-A4X">
-                                            <rect key="frame" x="242" y="144" width="36" height="23"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="124" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YG-q3-A4X">
+                                            <rect key="frame" x="239" y="144" width="140" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="23" id="ZNw-Dg-Go9"/>
+                                                <constraint firstAttribute="width" constant="140" id="llr-yF-2au"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                             <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curr. Bal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-b4-f1a">
+                                            <rect key="frame" x="20" y="146" width="57.5" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="19" id="jIg-Jy-ual"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. Bal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-qc-Zv7">
+                                            <rect key="frame" x="148.5" y="144" width="46.5" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="19" id="5GC-mt-QLX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-R2-TmO">
+                                            <rect key="frame" x="251" y="79" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="&gt;"/>
+                                            <connections>
+                                                <segue destination="EU2-H7-5wW" kind="show" identifier="chartSegue" id="5pX-bD-3ug"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PWe-qc-Zv7" secondAttribute="bottom" constant="16" id="ArQ-nB-iTq"/>
                                         <constraint firstItem="8YG-q3-A4X" firstAttribute="top" secondItem="8CC-fH-ELW" secondAttribute="bottom" constant="40" id="Cic-7H-Ihb"/>
-                                        <constraint firstItem="ZCx-qo-SCx" firstAttribute="leading" secondItem="XLL-8c-Kgx" secondAttribute="leadingMargin" constant="26" id="VKW-7V-4dE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ec5-b4-f1a" secondAttribute="bottom" constant="14" id="LMN-TH-m68"/>
+                                        <constraint firstItem="PWe-qc-Zv7" firstAttribute="leading" secondItem="ZCx-qo-SCx" secondAttribute="trailing" constant="27" id="QPb-2i-buQ"/>
+                                        <constraint firstItem="8YG-q3-A4X" firstAttribute="leading" secondItem="PWe-qc-Zv7" secondAttribute="trailing" constant="44" id="W8P-70-n6f"/>
                                         <constraint firstItem="8CC-fH-ELW" firstAttribute="top" secondItem="CTu-LK-yxd" secondAttribute="bottom" constant="33" id="XAv-wK-xo0"/>
+                                        <constraint firstItem="PWe-qc-Zv7" firstAttribute="top" secondItem="CTu-LK-yxd" secondAttribute="bottom" constant="92" id="aJt-Gd-uea"/>
                                         <constraint firstItem="CTu-LK-yxd" firstAttribute="top" secondItem="XLL-8c-Kgx" secondAttribute="topMargin" constant="16" id="anR-0u-e4A"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ZCx-qo-SCx" secondAttribute="bottom" constant="12" id="axK-bQ-fsr"/>
-                                        <constraint firstItem="8YG-q3-A4X" firstAttribute="leading" secondItem="ZCx-qo-SCx" secondAttribute="trailing" constant="160" id="im7-Ii-Pcg"/>
+                                        <constraint firstItem="Ec5-b4-f1a" firstAttribute="top" secondItem="8CC-fH-ELW" secondAttribute="bottom" constant="42" id="fXn-F3-da3"/>
+                                        <constraint firstItem="Ec5-b4-f1a" firstAttribute="leading" secondItem="XLL-8c-Kgx" secondAttribute="leadingMargin" id="g4B-XI-dXr"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="8YG-q3-A4X" secondAttribute="bottom" constant="12" id="lcb-2Q-65X"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="CTu-LK-yxd" secondAttribute="trailing" constant="147" id="mLF-Ai-lZy"/>
                                         <constraint firstItem="CTu-LK-yxd" firstAttribute="leading" secondItem="XLL-8c-Kgx" secondAttribute="leadingMargin" id="nCv-o0-F5o"/>
                                         <constraint firstItem="8CC-fH-ELW" firstAttribute="leading" secondItem="XLL-8c-Kgx" secondAttribute="leadingMargin" id="uuh-XI-DVP"/>
                                         <constraint firstItem="ZCx-qo-SCx" firstAttribute="top" secondItem="8CC-fH-ELW" secondAttribute="bottom" constant="40" id="yfb-Cd-0lu"/>
+                                        <constraint firstItem="ZCx-qo-SCx" firstAttribute="leading" secondItem="Ec5-b4-f1a" secondAttribute="trailing" constant="8" id="zLM-wR-gv8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="AccountType" destination="8CC-fH-ELW" id="7LB-k2-39a"/>
                                     <outlet property="accountNameType" destination="CTu-LK-yxd" id="7ZA-pC-SYL"/>
                                     <outlet property="availableBalance" destination="8YG-q3-A4X" id="yi2-Jt-kpD"/>
+                                    <outlet property="chartTestBtn" destination="3q6-R2-TmO" id="Yyi-I9-aAx"/>
                                     <outlet property="currentBalance" destination="ZCx-qo-SCx" id="4vR-O7-RVO"/>
+                                    <outletCollection property="gestureRecognizers" destination="O23-BP-pYA" appends="YES" id="aeB-to-EKk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -273,11 +336,18 @@
                     </navigationItem>
                     <connections>
                         <outlet property="accDataTableView" destination="4Bp-C1-URI" id="9sk-y9-Jtp"/>
+                        <outlet property="swipeGesture" destination="O23-BP-pYA" id="1f6-fh-zPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsn-rq-nLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="O23-BP-pYA">
+                    <rectEdge key="edges" left="YES" right="YES"/>
+                    <connections>
+                        <action selector="onSwipeGesture:" destination="cqJ-Q6-LUj" id="1wf-wo-gFA"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2218.840579710145" y="813.61607142857144"/>
+            <point key="canvasLocation" x="-1308.6956521739132" y="813.61607142857144"/>
         </scene>
         <!--Recipt-->
         <scene sceneID="HAI-h2-OO2">
@@ -522,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUS-Ec-ZEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149.2753623188407" y="813.61607142857144"/>
+            <point key="canvasLocation" x="-239.13043478260872" y="813.61607142857144"/>
         </scene>
         <!--Investments-->
         <scene sceneID="KDU-IK-t7W">
@@ -709,9 +779,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2a4-Sl-hci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239" y="814"/>
+            <point key="canvasLocation" x="671.01449275362324" y="813.61607142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XY6-19-emM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FcJ-tM-jaM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WLH-Uz-rEv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EU2-H7-5wW" kind="relationship" relationship="rootViewController" id="rh2-vD-7aw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uI2-mb-eVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3188.4057971014495" y="813.61607142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5pX-bD-3ug"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="camera.circle" catalog="system" width="128" height="121"/>

@@ -11,6 +11,7 @@ target 'Final_App' do
     pod 'Plaid'
     pod 'AFNetworking'
     pod 'FoldingCell'
+    pod 'PNChart'
   target 'Final_AppTests' do
     inherit! :search_paths
     # Pods for testing

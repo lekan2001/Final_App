@@ -23,6 +23,9 @@ PODS:
   - Parse/UI (1.18.0):
     - Parse/Core
   - Plaid (1.1.34)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - Parse
   - Parse/UI
   - Plaid
+  - PNChart
 
 SPEC REPOS:
   trunk:
@@ -38,6 +42,8 @@ SPEC REPOS:
     - FoldingCell
     - Parse
     - Plaid
+    - PNChart
+    - UICountingLabel
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -45,7 +51,9 @@ SPEC CHECKSUMS:
   FoldingCell: f92eb5fb9842319e7cd08c71533c98408b785099
   Parse: 79bdda34fdb7eb2a707a43a951c8aae236cb3e34
   Plaid: 083db655629015d74f71347d50322c9d936cdd2a
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 7ec9968871ad9fba38670aa0c1df3745c28fab75
+PODFILE CHECKSUM: 99371cb9efa06998416fb1fb5f43b2fb65713318
 
 COCOAPODS: 1.9.3

@@ -10,6 +10,11 @@
 #import "Parse/Parse.h"
 @interface LoginViewController ()
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *loginActivityIndicator;
+
+
+
+
 @end
 
 @implementation LoginViewController
@@ -18,6 +23,9 @@
     NSLog(@"I am visible");
     [super viewDidLoad];
     self.passwordField.secureTextEntry = YES;
+   // self.loginActivityIndicator.alpha = 0;
+    self.loginActivityIndicator = [[UIActivityIndicatorView alloc]init];
+    self.loginActivityIndicator.hidesWhenStopped = true;
     // Do any additional setup after loading the view.
 }
 
@@ -103,7 +111,7 @@
 
 //Login Method
 - (IBAction)login:(id)sender {
-    
+    [self.loginActivityIndicator startAnimating];
     NSString *username = self.usernameField.text;
     NSString *password = self.passwordField.text;
     
@@ -112,7 +120,9 @@
             NSLog(@"User log in failed: %@", error.localizedDescription);
         } else {
             NSLog(@"User logged in successfully");
-            
+//            [self.loginActivityIndicator startAnimating];
+//            self.loginActivityIndicator.alpha = 0;
+          //[self.loginActivityIndicator stopAnimating];
         
             
            
