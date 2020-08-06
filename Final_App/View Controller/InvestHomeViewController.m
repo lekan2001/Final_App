@@ -8,10 +8,18 @@
 
 #import "InvestHomeViewController.h"
 #import "StockCell.h"
-@interface InvestHomeViewController ()<UITableViewDataSource, UITableViewDelegate>
+#import "MaterialBottomAppBar.h"
+@interface InvestHomeViewController ()<UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate>
 @property (nonatomic,strong) NSArray *results;
+@property(nonatomic,strong) NSMutableArray *filteredResults;
+@property (assign, nonatomic) BOOL isFiltered;
 
 @property (weak, nonatomic) IBOutlet UITableView *stockTableView;
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *stockActivityIndicator;
+@property(nonatomic, strong)UIRefreshControl *stockrefreshControl;
+
+
 
 @end
 
@@ -26,14 +34,44 @@
     self.stockTableView.delegate = self;
     [self  fetchStock];
     
+    self.stockActivityIndicator= [[UIActivityIndicatorView alloc]init];
     
+    [self.stockrefreshControl addTarget:self action:@selector(fetchStock) forControlEvents:UIControlEventValueChanged];
+    [self.stockTableView insertSubview:self.stockrefreshControl atIndex:0];
+    [self.stockTableView addSubview:self.stockrefreshControl];
+    self.stockSearch.delegate = self;
+  
     
 }
+
+
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+    if([self.stockSearch.text isEqualToString:@""]){
+      //  self.isFiltered = true;
+        self.filteredResults = [[NSMutableArray alloc]initWithArray:self.results copyItems:YES];
+    }
+    else{
+        self.isFiltered = false;
+        for (NSArray *res in self.results){
+            if ([[res.description lowercaseString]rangeOfString:[self.stockSearch.text lowercaseString]].location != NSNotFound) {
+                [self.filteredResults addObject:res];
+            }
+        }
+        
+        [self.stockTableView reloadData];
+    }
+  
+        
+}
+
+
+
 
 //Network request for yahoo finance api
 
 -(void)fetchStock{
-    
+    [self.stockActivityIndicator startAnimating];
     NSDictionary *headers = @{ @"x-rapidapi-host": @"apidojo-yahoo-finance-v1.p.rapidapi.com",
                                @"x-rapidapi-key": @"622630b4d1mshbdea0d47e58ee3fp11ccc2jsnf94436f9936d" };
 
@@ -55,7 +93,9 @@
                                                         NSLog(@"%@", dataDictionary);
                                               
                                                         self.results = dataDictionary[@"finance"][@"result"][0][@"quotes"];
-                                                        for(id result in self.results){
+                                                        NSLog(@"%@", dataDictionary[@"finance"][@"result"][0][@"quotes"]);
+                                                        [self.stockActivityIndicator stopAnimating];                            for(id
+                                                            result in self.results){
                                                             NSLog(@"%@", result[@"shortName"]);
                                                             
                                                         }
@@ -66,7 +106,7 @@
                                                     }
         
              
-       
+        [self.stockrefreshControl endRefreshing];
         
                                             }];
     [task resume];
@@ -87,10 +127,10 @@
     StockCell *cell = [_stockTableView dequeueReusableCellWithIdentifier:(@"StockCell")];
     NSDictionary *result = self.results[indexPath.row];
     [cell.stocknameLabel sizeToFit];
-    //[cell.stockSymbolLabel sizeToFit];
+    
     cell.stocknameLabel.text =result[@"symbol"];
-    //cell.stockSymbolLabel.text = result[@"symbol"];
-    cell.regPriceLabel.text= [NSString stringWithFormat:@"%@ $", result[@"regularMarketPrice"]];
+    
+    cell.regPriceLabel.text= [NSString stringWithFormat:@"$%@", result[@"regularMarketPrice"]];
     cell.percentChangeLabel.text =[NSString stringWithFormat:@"%@", result[@"regularMarketChangePercent"]];
     cell.PrevCloseLabel.text = [NSString stringWithFormat:@"%@", result[@"regularMarketPreviousClose"]];
    // cell.textLabel.text = result[@"shortName"];

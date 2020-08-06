@@ -7,13 +7,14 @@
 //
 
 #import "ReceiptViewController.h"
-//#import "Receipt.h"
 #import "AppDelegate.h"
+#import "Receipt.h"
 #import <Parse/Parse.h>
-//#import <Parse.PFTextField.h>
 @interface ReceiptViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *receiptImageView;
-//@property (weak, nonatomic) IBOutlet PFTextField *receiptComment;
+@property (weak, nonatomic) IBOutlet UITextField *receiptCaption;
+
+
 @property(strong,nonatomic) UIImage *originalImage;
 @property (weak, nonatomic) IBOutlet UIButton *saveReceipt;
 @property (weak, nonatomic) IBOutlet UIButton *cameraOption;
@@ -26,6 +27,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+
+- (IBAction)saveReceipt:(id)sender {
+    Receipt *receipt = [Receipt new];
+    receipt.receiptCaption = self.receiptCaption.text;
+    [Receipt postReceiptImage:self.originalImage withCaption:self.receiptCaption.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+        if (error){
+            NSLog(@"%@", error.localizedDescription);
+        }
+        else{
+            NSLog(@"The Receipt was saved");
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
+    
+    
+}
+
+
+
+
+
+
+
+
+- (IBAction)receiptTransition:(id)sender {
+    [self performSegueWithIdentifier:@"receiptSegue" sender:nil];
+}
+
+
 
 
 - (IBAction)snapReceipt:(id)sender {

@@ -21,8 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *chartTestBtn;
 
+- (void)setSelected:(BOOL)selected animated:(BOOL)animate;
 
-//@property (strong, nonatomic) IBOutlet foregroundView *Folding1;
+
 
 
 @end

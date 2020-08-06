@@ -105,21 +105,22 @@
 
 -(void)pie{
     NSArray *items = @[[PNPieChartDataItem dataItemWithValue:605 color:PNBlue description:@"Food and Drink"],
-          [PNPieChartDataItem dataItemWithValue:2103 color:PNRed description:@"Payment"],
+          [PNPieChartDataItem dataItemWithValue:2103 color:PNRed description:@"Payments"],
         [PNPieChartDataItem dataItemWithValue:78 color:PNYellow description:@"Recreation"],[PNPieChartDataItem dataItemWithValue:6845 color:PNDeepGreen description:@"Transfer"],[PNPieChartDataItem dataItemWithValue:78 color:PNBrown description:@"Travel"]
                        
   ];
     
   self.pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake((CGFloat) (SCREEN_WIDTH / 2.0 - 150), 185, 250.0, 250.0) items:items];
   self.pieChart.descriptionTextColor = [UIColor whiteColor];
-  self.pieChart.descriptionTextFont = [UIFont fontWithName:@"Avenir-Medium" size:11.0];
+  self.pieChart.descriptionTextFont = [UIFont fontWithName:@"Avenir-Medium" size:9.0];
   self.pieChart.descriptionTextShadowColor = [UIColor clearColor];
   self.pieChart.showAbsoluteValues = NO;
-  self.pieChart.showOnlyValues = NO;
+  self.pieChart.showOnlyValues = YES;
   [self.pieChart strokeChart];
 
   self.pieChart.legendStyle = PNLegendItemStyleStacked;
   self.pieChart.legendFont = [UIFont boldSystemFontOfSize:12.0f];
+    self.pieChart.legendFontColor = [UIColor whiteColor];
   UIView *legend = [self.pieChart getLegendWithMaxWidth:250];
   [legend setFrame:CGRectMake(250, 500, legend.frame.size.width, legend.frame.size.height)];
   [self.view addSubview:legend];

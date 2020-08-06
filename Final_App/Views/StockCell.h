@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface StockCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *stocknameLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *stockSymbolLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *regPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *percentChangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *PrevCloseLabel;

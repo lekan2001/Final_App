@@ -114,15 +114,15 @@
     [self.loginActivityIndicator startAnimating];
     NSString *username = self.usernameField.text;
     NSString *password = self.passwordField.text;
-    
+    //[self.loginActivityIndicator startAnimating];
     [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
         if (error != nil) {
             NSLog(@"User log in failed: %@", error.localizedDescription);
         } else {
             NSLog(@"User logged in successfully");
-//            [self.loginActivityIndicator startAnimating];
+            
 //            self.loginActivityIndicator.alpha = 0;
-          //[self.loginActivityIndicator stopAnimating];
+          [self.loginActivityIndicator stopAnimating];
         
             
            

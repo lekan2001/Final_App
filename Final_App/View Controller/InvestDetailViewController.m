@@ -36,16 +36,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+  //  NSLog(@"%@", self.result[@"longName"]);
     
-       // [self fetchStock];
-        
-        
-   // self.stockFullName.text = self.result[@"longName"];
-    //self.stockSymbol.text = self.result[@"symbol"];
-    NSLog(@"%@", self.result[@"longName"]);
-    
-    
+//    self.stockFullName.text = self.result[@"symbol"];
 }
+
 
 /*
 #pragma mark - Navigation

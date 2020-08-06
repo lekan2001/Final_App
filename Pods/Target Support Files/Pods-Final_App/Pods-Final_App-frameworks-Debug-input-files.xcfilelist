@@ -2,6 +2,9 @@ ${PODS_ROOT}/Target Support Files/Pods-Final_App/Pods-Final_App-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework
 ${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework
+${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
+${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
+${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
 ${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework
 ${BUILT_PRODUCTS_DIR}/Parse/Parse.framework
 ${PODS_ROOT}/Plaid/LinkKit.framework
