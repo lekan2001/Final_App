@@ -34,6 +34,7 @@
     self.stockTableView.delegate = self;
     [self  fetchStock];
     
+    
     self.stockActivityIndicator= [[UIActivityIndicatorView alloc]init];
     
     [self.stockrefreshControl addTarget:self action:@selector(fetchStock) forControlEvents:UIControlEventValueChanged];
@@ -93,9 +94,9 @@
                                                         NSLog(@"%@", dataDictionary);
                                               
                                                         self.results = dataDictionary[@"finance"][@"result"][0][@"quotes"];
-                                                        NSLog(@"%@", dataDictionary[@"finance"][@"result"][0][@"quotes"]);
-                                                        [self.stockActivityIndicator stopAnimating];                            for(id
-                                                            result in self.results){
+                                                        NSLog(@"@%@", dataDictionary[@"finance"][@"result"][0][@"quotes"]);
+                                                        [self.stockActivityIndicator stopAnimating];
+                                                        for(id result in self.results){
                                                             NSLog(@"%@", result[@"shortName"]);
                                                             
                                                         }
@@ -130,12 +131,40 @@
     
     cell.stocknameLabel.text =result[@"symbol"];
     
-    cell.regPriceLabel.text= [NSString stringWithFormat:@"$%@", result[@"regularMarketPrice"]];
-    cell.percentChangeLabel.text =[NSString stringWithFormat:@"%@", result[@"regularMarketChangePercent"]];
-    cell.PrevCloseLabel.text = [NSString stringWithFormat:@"%@", result[@"regularMarketPreviousClose"]];
+    cell.regPriceLabel.text= [NSString stringWithFormat:@"$%@.2f", result[@"regularMarketPrice"]];
+    cell.percentChangeLabel.text =[NSString stringWithFormat:@"%@.2f", result[@"regularMarketChangePercent"]];
+    cell.PrevCloseLabel.text = [NSString stringWithFormat:@"%@.2f", result[@"regularMarketPreviousClose"]];
+    
+    
+    
+    
    // cell.textLabel.text = result[@"shortName"];
     return cell;
 }
+- (IBAction)stockReturn:(UISegmentedControl *)sender {
+    StockCell *cell = [_stockTableView dequeueReusableCellWithIdentifier:(@"StockCell")];
+    NSArray *timeInvest = @[@(3), @(6), @(12)];
+    int ivestT = [timeInvest[cell.InvestTimeControl.selectedSegmentIndex] intValue];
+    int principal = 10000;
+    int rate  = 7.25;
+    int time = ivestT;
+    int divisor = 100;
+    int totRet = (principal * rate *time)/(divisor);
+    cell.ReturnLabel.text = [NSString  stringWithFormat:@"%d",totRet];
+    
+    
+}
+
+
+
+
+
+
+
+
+//-(void)retainValue{
+//
+//}
 /*
 #pragma mark - Navigation
 

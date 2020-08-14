@@ -38,6 +38,17 @@
         }
         else{
             NSLog(@"The Receipt was saved");
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Congrats😀"
+                                                                               message: @"Receipt Saved"
+                preferredStyle:(UIAlertControllerStyleAlert)];
+                // create an OK action
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                                   style:UIAlertActionStyleDefault
+                                                                 handler:^(UIAlertAction * _Nonnull action) {
+                                                                         // handle response here.
+                                                                 }];
+                // add the OK action to the alert controller
+                [alert addAction:okAction];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];

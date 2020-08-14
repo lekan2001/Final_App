@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "InvestHomeViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface InvestDetailViewController : UIViewController
-@property(nonatomic,strong) NSDictionary *result;
+@property(nonatomic,strong) id result;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -18,8 +18,7 @@
     self.receiptImage.file =receipt.receiptimage;
     NSLog(@"%@", self.receiptImage.file);
     [self.receiptImage loadInBackground];
-    
-    
+  
 }
 
 @end

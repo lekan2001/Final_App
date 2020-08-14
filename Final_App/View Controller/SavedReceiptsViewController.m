@@ -57,10 +57,12 @@
         else{
             NSLog(@"%@", error.localizedDescription);
         }
+        [self.refreshControl endRefreshing];
+        [self.receiptsActivity stopAnimating];
     }];
     [weakSelf.receiptSavedView reloadData];
    
-    [self.refreshControl endRefreshing];
+    
 }
 /*
 #pragma mark - Navigation

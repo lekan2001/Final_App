@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *regPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *percentChangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *PrevCloseLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *InvestTimeControl;
+@property (weak, nonatomic) IBOutlet UILabel *ReturnLabel;
+
 
 @end
 
